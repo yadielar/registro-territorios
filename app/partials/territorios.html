@@ -1,0 +1,12 @@
+<label>Tipo de lista:</label>
+<select ng-model="listType">
+	<option value="todos">Todos</option>
+	<option value="disponibles">Disponibles</option>
+</select>
+
+<h2>Territorios (mostrando {{listType}})</h2>
+<ul class="territories">
+	<li ng-repeat="territory in territories | filterBy:listType">
+		<p><strong>{{territory.number}}.</strong> {{territory.name}}</p>
+	</li>
+</ul>

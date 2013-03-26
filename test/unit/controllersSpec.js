@@ -2,11 +2,11 @@
 
 /* jasmine specs for controllers go here */
 
-describe('MyCtrl1', function(){
-  var myCtrl1;
+describe('TerrListCtrl', function(){
+  var TerrListCtrl;
 
   beforeEach(function(){
-    myCtrl1 = new MyCtrl1();
+    TerrListCtrl = new TerrListCtrl();
   });
 
 
