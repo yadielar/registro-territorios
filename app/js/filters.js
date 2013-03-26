@@ -12,6 +12,9 @@ angular.module('regterApp.filters', []).
 		else if (type == "disponibles") {
 			output = $filter('filter')(input, {available: true});
 		}
+		else if (type == "asignados") {
+			output = $filter('filter')(input, {available: false});
+		}
 		return output;
     }
   });
